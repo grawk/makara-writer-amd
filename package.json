@@ -1,0 +1,24 @@
+{
+  "name": "makara-writer-amd",
+  "version": "0.0.1",
+  "description": "Writes locale languagepack files in amd format",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grawk/makara-writer-amd.git"
+  },
+  "author": "Matt Edelman <medelman@paypal.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/krakenjs/makara-writer-amd/issues"
+  },
+  "homepage": "https://github.com/krakenjs/makara-writer-amd#readme",
+  "dependencies": {
+    "iferr": "^0.1.5",
+    "mkdirp": "^0.5.1",
+    "spundle": "^1.0.3"
+  }
+}
