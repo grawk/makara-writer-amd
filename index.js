@@ -20,7 +20,7 @@ module.exports = function writeLocale(appRoot) {
     }
 };
 var amdBuilder = module.exports.amdBuilder = function (localeRoot, m, cb) {
-    spundle(path.resolve(localeRoot, 'locales'), m[2], m[1], iferr(cb, function (out) {
+    spundle(localeRoot, m[2], m[1], iferr(cb, function (out) {
         cb(null, 'define("_languagepack", function () { return ' + JSON.stringify(out) + '; });');
     }));
 };
