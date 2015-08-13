@@ -6,14 +6,13 @@ Creates AMD formatted language bundles from `.properties` files.
 
 ### Default exported function
 
-1. Provide the default exported function with a filesystem path:
 `module.exports = function writeLocale(appRoot) {...`
 
-2. Returns:
-`function (locale, cb) {`
-
-3. Call the returned function with a locale string (e.g. `fr-FR`) and errback function
-4. Will transform all `.properties` files under the given locale directory (`appRoot/FR/fr/`) into AMD module `appRoot/.build/fr-FR/_languagepack.js`
+`appRoot {String}`: filesystem path where locale directory resides
+`@returns {Function}`: `function (locale, cb) {`
+  - `locale {String}`: (e.g. `fr-FR`)
+  - `cb {Function}`: errback or called when all `.properties` files under the given locale directory (`appRoot/FR/fr/`) are 
+   transformed into an AMD module `appRoot/.build/fr-FR/_languagepack.js`
 
 ### amdBuilder
 
