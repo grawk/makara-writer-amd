@@ -1,6 +1,6 @@
 {
   "name": "makara-writer-amd",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Writes locale languagepack files in amd format",
   "main": "index.js",
   "scripts": {
